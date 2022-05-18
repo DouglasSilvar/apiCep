@@ -2,6 +2,7 @@ package com.cep.api.client;
 
 import com.cep.api.model.CepResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
 import java.net.URI;
@@ -9,6 +10,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+@Configuration
 public class CepClient {
 
     //Esse metodo vai ser usado para buscar o CEP e retornar um Objeto CepResponse.
